@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission Portal | Sandip Foundation Shri Ram Polytechnic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="college-style.css" />
+</head>
+<body>
+  <header class="subpage-hero admission-hero">
+    <nav class="navbar container">
+      <a class="brand-mark" href="Sandip foundation .html" aria-label="Sandip Foundation home">
+        <img src="logo.png" alt="Sandip Foundation logo" />
+        <span class="brand-copy">
+          <strong>Sandip Foundation Shri Ram Polytechnic</strong>
+          <small>Admission Portal | Session 2026-27</small>
+        </span>
+      </a>
+      <ul class="menu menu-static">
+        <li><a href="Sandip foundation .html#about">About</a></li>
+        <li><a href="Sandip foundation .html#courses">Courses</a></li>
+        <li><a href="Sandip foundation .html#placement">Placement</a></li>
+        <li><a href="Sandip foundation .html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container subpage-copy">
+      <p class="tag">Guided Admission Journey</p>
+      <h1>Admission Portal</h1>
+      <p>Complete the student profile, unlock the next step, and submit the final admission record in a clean guided flow.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <div class="admission-top-grid" data-reveal>
+        <article class="card">
+          <p class="mini-tag">Portal Flow</p>
+          <h3>Step By Step Admission</h3>
+          <p>Begin with basic student details, unlock the admission stage, and then complete the final application form.</p>
+        </article>
+        <article class="card">
+          <p class="mini-tag">Required Fields</p>
+          <h3>Compulsory Information</h3>
+          <p><span class="required-mark">*</span> Campus, Student Name, Branch, Mobile Number, and Date of Birth are compulsory before moving ahead.</p>
+        </article>
+        <article class="card">
+          <p class="mini-tag">Record Saving</p>
+          <h3>Quick Review</h3>
+          <p>Every final submission is stored locally in the browser and displayed below for quick verification.</p>
+        </article>
+      </div>
+
+      <section class="card gateway-card" id="journeyGateway" data-reveal>
+        <div class="section-heading-block narrow">
+          <p class="mini-tag">Step 1</p>
+          <h2>Student Profile Gateway</h2>
+          <p>Fill the required student details first. Once the basic profile is complete, continue to unlock the admission button.</p>
+        </div>
+        <div class="gateway-actions">
+          <button type="button" class="btn" id="unlockAdmission">Continue</button>
+          <a class="btn btn-light" href="Sandip foundation .html#student-feel">Back To Home Step</a>
+        </div>
+      </section>
+
+      <section id="admissionEntry" class="admission-entry card" aria-hidden="true" data-reveal>
+        <div class="section-heading-block narrow">
+          <p class="mini-tag">Step 2</p>
+          <h2>Open Admission Form</h2>
+          <p>The student profile is ready. Click the admission button below to open the full form with a smooth transition.</p>
+        </div>
+        <div class="gateway-actions">
+          <button type="button" class="btn" id="openAdmissionButton">Admission</button>
+        </div>
+      </section>
+
+      <div class="admission-page-layout" data-reveal>
+        <article class="card admission-form-panel">
+          <div class="section-heading-block narrow">
+            <p class="mini-tag">Basic Profile</p>
+            <h2>Student Starter Details</h2>
+            <p>These details help create the first student profile before the complete admission form opens.</p>
+          </div>
+
+          <form id="journeyForm">
+            <div class="form-grid">
+              <label>
+                Select Campus <span class="required-mark">*</span>
+                <select name="campus" required>
+                  <option value="">Choose campus</option>
+                  <option value="Sijaul">Sijaul Campus</option>
+                  <option value="Nashik">Nashik Campus</option>
+                </select>
+              </label>
+              <label>
+                Student Name <span class="required-mark">*</span>
+                <input type="text" name="studentName" placeholder="Enter full name" required />
+              </label>
+              <label>
+                Branch <span class="required-mark">*</span>
+                <select name="branch" required>
+                  <option value="">Select branch</option>
+                  <option>Civil Engineering</option>
+                  <option>Mechanical Engineering</option>
+                  <option>Electrical Engineering</option>
+                  <option>Computer Engineering</option>
+                  <option>Electronics Engineering</option>
+                  <option>Artificial Intelligence</option>
+                  <option>Data Science</option>
+                  <option>Automobile Engineering</option>
+                </select>
+              </label>
+              <label>
+                Mobile Number <span class="required-mark">*</span>
+                <input type="tel" name="mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required />
+              </label>
+              <label>
+                Date of Birth <span class="required-mark">*</span>
+                <input type="date" name="dob" required />
+              </label>
+              <label>
+                Student City
+                <input type="text" name="studentCity" placeholder="Enter city name" />
+              </label>
+              <label class="full-width">
+                State
+                <select name="state">
+                  <option value="">Select state / union territory</option>
+                  <option>Andhra Pradesh</option>
+                  <option>Arunachal Pradesh</option>
+                  <option>Assam</option>
+                  <option>Bihar</option>
+                  <option>Chhattisgarh</option>
+                  <option>Goa</option>
+                  <option>Gujarat</option>
+                  <option>Haryana</option>
+                  <option>Himachal Pradesh</option>
+                  <option>Jharkhand</option>
+                  <option>Karnataka</option>
+                  <option>Kerala</option>
+                  <option>Madhya Pradesh</option>
+                  <option>Maharashtra</option>
+                  <option>Manipur</option>
+                  <option>Meghalaya</option>
+                  <option>Mizoram</option>
+                  <option>Nagaland</option>
+                  <option>Odisha</option>
+                  <option>Punjab</option>
+                  <option>Rajasthan</option>
+                  <option>Sikkim</option>
+                  <option>Tamil Nadu</option>
+                  <option>Telangana</option>
+                  <option>Tripura</option>
+                  <option>Uttar Pradesh</option>
+                  <option>Uttarakhand</option>
+                  <option>West Bengal</option>
+                  <option>Andaman and Nicobar Islands</option>
+                  <option>Chandigarh</option>
+                  <option>Dadra and Nagar Haveli and Daman and Diu</option>
+                  <option>Delhi</option>
+                  <option>Jammu and Kashmir</option>
+                  <option>Ladakh</option>
+                  <option>Lakshadweep</option>
+                  <option>Puducherry</option>
+                </select>
+              </label>
+              <label class="full-width">
+                Program
+                <select name="program">
+                  <option value="">Select available program</option>
+                  <option>Diploma in Civil Engineering</option>
+                  <option>Diploma in Mechanical Engineering</option>
+                  <option>Diploma in Electrical Engineering</option>
+                  <option>Diploma in Computer Engineering</option>
+                  <option>Diploma in Electronics and Telecommunication</option>
+                  <option>B.Tech in Civil Engineering</option>
+                  <option>B.Tech in Mechanical Engineering</option>
+                  <option>B.Tech in Electrical Engineering</option>
+                  <option>B.Tech in Computer Science Engineering</option>
+                  <option>B.Tech in Electronics and Communication</option>
+                  <option>B.Tech in Artificial Intelligence and Data Science</option>
+                  <option>BCA</option>
+                  <option>BBA</option>
+                  <option>B.Sc. Computer Science</option>
+                  <option>MBA</option>
+                  <option>MCA</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn">Save Basic Profile</button>
+              <button type="reset" class="btn btn-light" id="clearBasic">Clear</button>
+            </div>
+          </form>
+        </article>
+
+        <aside class="card preview-card portal-side-panel">
+          <div class="section-heading-block narrow">
+            <p class="mini-tag">Live Preview</p>
+            <h3>Student Starter Summary</h3>
+            <p>Check the basic profile here before moving to the admission form.</p>
+          </div>
+          <div id="journeyPreview" class="preview-placeholder">Fill in the starting student details to see the live preview here.</div>
+          <div class="saved-box">
+            <h5>Portal Note</h5>
+            <p>Required fields marked with <span class="required-mark">*</span> must be completed before the admission stage opens.</p>
+          </div>
+        </aside>
+      </div>
+
+      <section id="admissionPanel" class="admission-panel card" aria-hidden="true" data-reveal>
+        <div class="section-heading-block narrow">
+          <p class="mini-tag">Step 3</p>
+          <h2>Complete Admission Details</h2>
+          <p id="selectedCampusText">After campus selection, the full admission form opens here with a smooth motion effect.</p>
+        </div>
+
+        <div class="admission-page-layout">
+          <form class="card admission-form-panel" id="candidateForm">
+            <div class="form-grid">
+              <label>
+                Father's Name
+                <input type="text" name="fatherName" placeholder="Enter father's name" required />
+              </label>
+              <label>
+                Mother's Name
+                <input type="text" name="motherName" placeholder="Enter mother's name" required />
+              </label>
+              <label>
+                Gender
+                <select name="gender" required>
+                  <option value="">Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>
+                Email Address
+                <input type="email" name="email" placeholder="Enter email address" required />
+              </label>
+              <label>
+                Aadhaar Number
+                <input type="text" name="aadhaar" placeholder="Enter Aadhaar number" />
+              </label>
+              <label>
+                Category
+                <select name="category">
+                  <option value="">Select category</option>
+                  <option>General</option>
+                  <option>OBC</option>
+                  <option>SC</option>
+                  <option>ST</option>
+                  <option>EWS</option>
+                </select>
+              </label>
+              <label>
+                10th Percentage
+                <input type="text" name="tenthMarks" placeholder="e.g. 78%" required />
+              </label>
+              <label>
+                12th / Last Qualification
+                <input type="text" name="lastQualification" placeholder="Enter last qualification" />
+              </label>
+              <label>
+                Parent Contact Number
+                <input type="tel" name="parentMobile" placeholder="Enter parent mobile number" />
+              </label>
+              <label>
+                Preferred Session
+                <input type="text" name="session" value="2026-27" />
+              </label>
+              <label>
+                WhatsApp Number
+                <input type="tel" name="whatsapp" placeholder="Enter WhatsApp number" />
+              </label>
+              <label>
+                Hostel Required
+                <select name="hostelRequired">
+                  <option value="">Select option</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </label>
+              <label class="full-width">
+                Full Address
+                <textarea name="address" rows="3" placeholder="Village / Town / District / State" required></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn">Save Student Record</button>
+              <button type="reset" class="btn btn-light">Clear Form</button>
+            </div>
+          </form>
+
+          <aside class="card preview-card portal-side-panel">
+            <div class="section-heading-block narrow">
+              <p class="mini-tag">Live Preview</p>
+              <h3>Final Student Summary</h3>
+              <p>Review the complete admission profile before saving the final record.</p>
+            </div>
+            <div id="candidatePreview" class="preview-placeholder">Complete the full admission form to see the student summary here.</div>
+            <div class="saved-box">
+              <h5>Saved Status</h5>
+              <p id="saveStatus">No student record has been saved yet.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-heading-block records-section" data-reveal>
+        <p class="mini-tag">Saved Records</p>
+        <h2>Recorded Student Entries</h2>
+        <p>Submitted admission entries are stored locally in the browser and listed here.</p>
+      </section>
+      <div id="savedRecords" class="records-grid" data-reveal>
+        <div class="card">No saved record is available yet.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Sandip Foundation Shri Ram Polytechnic. All rights reserved.</p>
+      <a href="Sandip foundation .html">Back to home</a>
+    </div>
+  </footer>
+
+  <script>
+    const journeyForm = document.getElementById("journeyForm");
+    const candidateForm = document.getElementById("candidateForm");
+    const journeyPreview = document.getElementById("journeyPreview");
+    const candidatePreview = document.getElementById("candidatePreview");
+    const saveStatus = document.getElementById("saveStatus");
+    const admissionPanel = document.getElementById("admissionPanel");
+    const selectedCampusText = document.getElementById("selectedCampusText");
+    const savedRecords = document.getElementById("savedRecords");
+    const admissionEntry = document.getElementById("admissionEntry");
+    const unlockAdmission = document.getElementById("unlockAdmission");
+    const openAdmissionButton = document.getElementById("openAdmissionButton");
+    const storageKey = "sandipAdmissionRecords";
+
+    function getJourneyValues() {
+      return Object.fromEntries(new FormData(journeyForm).entries());
+    }
+
+    function updateJourneyPreview() {
+      const values = getJourneyValues();
+      const hasContent = Object.values(values).some((value) => value && value.trim() !== "");
+
+      if (!hasContent) {
+        journeyPreview.className = "preview-placeholder";
+        journeyPreview.textContent = "Fill in the starting student details to see the live preview here.";
+        return;
+      }
+
+      journeyPreview.className = "preview-list";
+      journeyPreview.innerHTML = `
+        <div><strong>Campus:</strong> ${values.campus || "-"}</div>
+        <div><strong>Student Name:</strong> ${values.studentName || "-"}</div>
+        <div><strong>Branch:</strong> ${values.branch || "-"}</div>
+        <div><strong>Mobile:</strong> ${values.mobile || "-"}</div>
+        <div><strong>Date of Birth:</strong> ${values.dob || "-"}</div>
+        <div><strong>City:</strong> ${values.studentCity || "-"}</div>
+        <div><strong>State:</strong> ${values.state || "-"}</div>
+        <div><strong>Program:</strong> ${values.program || "-"}</div>
+      `;
+    }
+
+    function updateCandidatePreview() {
+      const values = {
+        ...getJourneyValues(),
+        ...Object.fromEntries(new FormData(candidateForm).entries())
+      };
+      const hasContent = Object.values(values).some((value) => value && value.trim() !== "");
+
+      if (!hasContent) {
+        candidatePreview.className = "preview-placeholder";
+        candidatePreview.textContent = "Complete the full admission form to see the student summary here.";
+        return;
+      }
+
+      candidatePreview.className = "preview-list";
+      candidatePreview.innerHTML = `
+        <div><strong>Campus:</strong> ${values.campus || "-"}</div>
+        <div><strong>Student Name:</strong> ${values.studentName || "-"}</div>
+        <div><strong>Branch:</strong> ${values.branch || "-"}</div>
+        <div><strong>Program:</strong> ${values.program || "-"}</div>
+        <div><strong>Mobile:</strong> ${values.mobile || "-"}</div>
+        <div><strong>Date of Birth:</strong> ${values.dob || "-"}</div>
+        <div><strong>Father's Name:</strong> ${values.fatherName || "-"}</div>
+        <div><strong>Mother's Name:</strong> ${values.motherName || "-"}</div>
+        <div><strong>Gender:</strong> ${values.gender || "-"}</div>
+        <div><strong>Email:</strong> ${values.email || "-"}</div>
+        <div><strong>Address:</strong> ${values.address || "-"}</div>
+      `;
+    }
+
+    function renderSavedRecords() {
+      const records = JSON.parse(localStorage.getItem(storageKey) || "[]");
+
+      if (!records.length) {
+        savedRecords.innerHTML = '<div class="card">No saved record is available yet.</div>';
+        return;
+      }
+
+      savedRecords.innerHTML = records.map((record, index) => `
+        <article class="card record-card">
+          <p class="mini-tag">Record ${index + 1}</p>
+          <h3>${record.studentName}</h3>
+          <p><strong>Campus:</strong> ${record.campus}</p>
+          <p><strong>Branch:</strong> ${record.branch}</p>
+          <p><strong>Program:</strong> ${record.program || "-"}</p>
+          <p><strong>Mobile:</strong> ${record.mobile}</p>
+          <p><strong>Saved At:</strong> ${record.savedAt}</p>
+        </article>
+      `).join("");
+    }
+
+    function showAdmissionEntry() {
+      admissionEntry.classList.add("is-open");
+      admissionEntry.setAttribute("aria-hidden", "false");
+      admissionEntry.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function openAdmissionPanel() {
+      const values = getJourneyValues();
+      selectedCampusText.textContent = `${values.campus} campus selected. The full admission form is now open below with a smooth motion effect.`;
+      admissionPanel.classList.add("is-open");
+      admissionPanel.setAttribute("aria-hidden", "false");
+      admissionPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+      updateCandidatePreview();
+    }
+
+    journeyForm.addEventListener("input", updateJourneyPreview);
+    candidateForm.addEventListener("input", updateCandidatePreview);
+
+    journeyForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!journeyForm.reportValidity()) {
+        return;
+      }
+      updateJourneyPreview();
+      saveStatus.textContent = "Basic student profile saved. Continue to unlock the admission button.";
+      document.getElementById("journeyGateway").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    unlockAdmission.addEventListener("click", function () {
+      if (!journeyForm.reportValidity()) {
+        journeyForm.requestSubmit();
+        return;
+      }
+      showAdmissionEntry();
+    });
+
+    openAdmissionButton.addEventListener("click", function () {
+      if (!journeyForm.reportValidity()) {
+        journeyForm.requestSubmit();
+        return;
+      }
+      openAdmissionPanel();
+    });
+
+    candidateForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!candidateForm.reportValidity() || !journeyForm.reportValidity()) {
+        return;
+      }
+
+      const record = {
+        ...getJourneyValues(),
+        ...Object.fromEntries(new FormData(candidateForm).entries()),
+        savedAt: new Date().toLocaleString("en-IN")
+      };
+
+      const existing = JSON.parse(localStorage.getItem(storageKey) || "[]");
+      existing.unshift(record);
+      localStorage.setItem(storageKey, JSON.stringify(existing));
+
+      renderSavedRecords();
+      updateCandidatePreview();
+      saveStatus.textContent = `${record.studentName}'s record has been saved successfully.`;
+    });
+
+    candidateForm.addEventListener("reset", function () {
+      setTimeout(() => {
+        updateCandidatePreview();
+        saveStatus.textContent = "No student record has been saved yet.";
+      }, 0);
+    });
+
+    document.querySelectorAll("[data-reveal]").forEach((node, index) => {
+      setTimeout(() => node.classList.add("revealed"), 80 * (index + 1));
+    });
+
+    updateJourneyPreview();
+    updateCandidatePreview();
+    renderSavedRecords();
+  </script>
+</body>
+</html>
